@@ -165,7 +165,8 @@ https://github.com/midorg-com/re01
 
 点击绿色的code按钮，复制一下仓库的https....git链接
 
-然后，在自己电脑上找个文件夹，用vscode打开，新建终端，输入git clone 仓库链接 空格点号. （这个命令叫克隆，把网盘上的仓库克隆到本地电脑）（失败的话多试几次，网络问题）
+然后，在自己电脑上找个文件夹，用vscode打开，新建终端，输入
+git clone 仓库链接 空格点号. （这个命令叫克隆，把网盘上的仓库克隆到本地电脑）（失败的话多试几次，网络问题）
 
 git remote -v （可以看到，只有自己仓库的链接）
 
@@ -185,9 +186,9 @@ git checkout -b kwc （创建并切换进入kwc的分支）
 
 {
 
-​	"name": "SatoYumeko"
+​	"name": "kwc"
 
-​	"uri": "https://satoyumeko.com/"
+​	"uri": "https://kwc.com/"
 
 }
 
@@ -195,7 +196,7 @@ git checkout -b kwc （创建并切换进入kwc的分支）
 
 git add .
 
-git commit -m "add(member): SatoYumeko"
+git commit -m "add(member): kwc"
 
 git push
 
