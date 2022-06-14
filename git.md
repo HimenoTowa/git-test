@@ -141,11 +141,15 @@ git commit -m "first commit"  这三个都已学过做过
 
 git branch -M main (创建一个main分支，并把主分支切换为main)
 
-git remote add origin https://github.com/himenotowa/xxx.git （仓库地址链接+.git）（相当于给这个git项目设置一个网盘地址，这样git就知道该上传到哪里了）
+git remote add origin https://github.com/himenotowa/xxx.git （仓库网址+.git）（相当于给这个git项目设置一个网盘地址，这样git就知道该上传到哪里了）然后会提示输入邮箱和密码，输入github的即可。
 
-git push -u origin main （push就是推送上传到github）
+git pull origin main           // 刚创建一个新库，所以要把东西先从远端下载过来，保证一样。
 
-然后会提示输入邮箱和密码，输入github的即可。
+(有可能出现错误，这是因为文件版本没有及时更新，两个分支是两个不同的版本，具有不同的提交历史，解决方式就是在原本的命令之后加上一句命令即可：
+git pull origin main --allow-unrelated-histories)
+
+git push -u origin main （push就是推送上传到github）(-u即--set-upstream)
+
 
 ---
 
